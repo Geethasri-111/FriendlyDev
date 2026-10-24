@@ -26,7 +26,7 @@ export const links: Route.LinksFunction = () => [
 ];
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Friendly Dev | HomePage" },
+    { title: "Friendly Dev " },
     { name: "description", content: "SSR development" },
   ];
 }
