@@ -8,6 +8,7 @@ export default [
     route("projects",'routes/Projects.tsx'),
     route("projects/:id",'routes/projectDetails.tsx'),
     route("blog",'routes/Blog.tsx'),
+    route("*",'routes/errors/notFound.tsx'),
 
     ]),
 

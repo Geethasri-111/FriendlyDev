@@ -2,6 +2,7 @@ import Hero from "~/components/Hero";
 import type { Route } from "./+types/home";
 import Featuredprojects from "~/components/Featuredprojects";
 import type { project } from '~/types'
+import AboutPreview from "~/components/AboutPreview";
 
 export async function loader({ request }: Route.LoaderArgs) {
   
@@ -13,7 +14,11 @@ export async function loader({ request }: Route.LoaderArgs) {
 const Home = ({ loaderData,}: Route.ComponentProps) => {
   const {projects} = loaderData;
 
-  return <Featuredprojects projects={projects} count={2}/>;
+  return(<>
+   <Featuredprojects projects={projects} count={2}/>
+   <AboutPreview/>
+   </>
+  )
 }
 
 export default Home;
