@@ -1,6 +1,6 @@
 import type { Route } from './+types/Projects.js';
 import type { project } from "~/types";
-import ProjectCard from '../components/ProjectCard.tsx'
+import ProjectCard from '../components/ProjectCard'
 import { useState } from 'react';
 import Pagination from '~/components/Pagination.js';
 import { AnimatePresence ,motion} from "motion/react"
